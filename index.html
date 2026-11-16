@@ -1,38 +1,347 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080808"><meta name="description" content="TOP 5 كافتيريا - المأكولات الشعبية والسندوتشات والعصائر والخلطات والحلويات والمشروبات في الرياض.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="TOP 5 كافتيريا - المأكولات الشعبية والسندوتشات والعصائر والخلطات والحلويات.">
 <title>TOP 5 | كافتيريا</title>
 <style>
-:root{--bg:#080808;--panel:#111;--gold:#e7b72f;--gold2:#ffd65b;--muted:#bdb7a8;--line:#6e5418;--green:#13a84a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font-family:Tahoma,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.topbar{position:sticky;top:0;z-index:20;background:#050505ee;border-bottom:1px solid var(--gold);backdrop-filter:blur(10px)}.nav{max-width:1200px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}.logo{font-size:30px;font-weight:900;color:var(--gold);letter-spacing:1px}.logo small{display:block;color:#fff;font-size:12px;letter-spacing:0;text-align:center}.navlinks{display:flex;gap:20px;color:#eee}.cartbtn,.goldbtn{background:linear-gradient(135deg,var(--gold2),#c18b12);color:#15110a;border:0;border-radius:12px;padding:10px 16px;font-weight:900}.hero{max-width:1200px;margin:18px auto;padding:36px 24px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(ellipse at 75% 20%,#5b4316 0,transparent 40%),linear-gradient(115deg,#17130a,#080808 65%);min-height:230px;display:flex;align-items:center;justify-content:space-between;gap:20px}.hero h1{font-size:clamp(42px,8vw,76px);line-height:1;margin:0;color:var(--gold2);text-shadow:0 3px 18px #a16e12}.hero p{font-size:20px;color:#eee;margin:15px 0}.hero .tag{display:inline-block;border:1px solid var(--gold);border-radius:30px;padding:7px 16px;color:var(--gold2)}.hero-art{font-size:90px;filter:drop-shadow(0 8px 20px #b78027);min-width:140px;text-align:center}.section{max-width:1200px;margin:26px auto;padding:0 18px}.section h2{color:var(--gold2);font-size:25px;margin:0 0 14px}.categories{display:flex;gap:9px;overflow:auto;padding:3px 0 14px}.cat{white-space:nowrap;border:1px solid var(--line);background:#111;color:#fff;border-radius:30px;padding:9px 15px}.cat.active,.cat:hover{background:var(--gold);color:#17120a;border-color:var(--gold);font-weight:bold}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:14px}.product{background:linear-gradient(160deg,#171717,#0d0d0d);border:1px solid #5c471b;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.photo{height:145px;background:radial-gradient(circle at 50% 40%,#4c3713,#17120a 55%,#090909);display:grid;place-items:center;border-bottom:1px solid #4b3916;position:relative}.photo .symbol{font-size:62px;filter:drop-shadow(0 5px 9px #000)}.photo:after{content:'صورة الصنف';position:absolute;bottom:6px;right:9px;color:#d5bd7b;font-size:10px;opacity:.8}.pbody{padding:12px;display:flex;flex-direction:column;gap:7px;flex:1}.pname{font-weight:800;min-height:48px}.price{color:var(--gold2);font-size:19px;font-weight:900}.muted{color:var(--muted);font-size:12px}.add{margin-top:auto;background:linear-gradient(135deg,var(--gold2),#c28b17);border:0;border-radius:10px;padding:9px;color:#17120a;font-weight:900}.add:disabled{opacity:.45;cursor:not-allowed}.layout{display:grid;grid-template-columns:1fr 310px;gap:18px;align-items:start}.cart{position:sticky;top:82px;background:#111;border:1px solid var(--line);border-radius:16px;padding:16px}.cart h3{margin:0 0 12px;color:var(--gold2)}.cartline{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid #292316;font-size:13px}.qty{display:flex;align-items:center;gap:7px}.qty button{width:25px;height:25px;border:1px solid var(--line);border-radius:7px;background:#1a1a1a;color:#fff}.total{display:flex;justify-content:space-between;font-size:20px;font-weight:900;color:var(--gold2);padding:14px 0}.whatsapp{width:100%;border:0;border-radius:12px;background:var(--green);color:white;padding:13px;font-weight:900}.empty{color:#aaa;text-align:center;padding:18px 0}.info{border-top:1px solid var(--line);margin-top:28px;padding:25px 18px;color:#ddd;background:#0c0c0c}.infoin{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.info strong{color:var(--gold2)}.notice{font-size:12px;color:#a99c7c;margin:12px 0}.floating{position:fixed;bottom:16px;left:16px;z-index:25;border:0;border-radius:50px;padding:12px 18px;background:var(--green);color:white;font-weight:bold;box-shadow:0 5px 25px #000}.hide{display:none!important}@media(max-width:800px){.navlinks{display:none}.hero{margin:12px 10px;padding:25px 18px}.hero-art{font-size:65px;min-width:80px}.layout{grid-template-columns:1fr}.cart{position:static}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section{padding:0 10px}.photo{height:120px}}@media(max-width:380px){.grid{grid-template-columns:1fr 1fr}.pname{font-size:13px}}
-</style></head>
+:root {
+  --bg:#080808;
+  --panel:#141414;
+  --gold:#e7b72f;
+  --gold2:#ffd65b;
+  --white:#fff;
+  --muted:#aaa;
+  --green:#16a34a;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;background:var(--bg);color:var(--white);
+  font-family:Tahoma,Arial,sans-serif;line-height:1.7
+}
+button {font:inherit;cursor:pointer}
+a {color:inherit;text-decoration:none}
+header {
+  position:sticky;top:0;z-index:10;
+  background:#080808f5;border-bottom:1px solid #705515
+}
+.nav {
+  max-width:1200px;margin:auto;padding:12px 18px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px
+}
+.logo {font-size:29px;font-weight:900;color:var(--gold)}
+.logo small {display:block;text-align:center;color:white;font-size:11px}
+.links {display:flex;gap:18px}
+button.gold,.gold {
+  background:linear-gradient(135deg,var(--gold2),#bd8612);
+  border:0;border-radius:10px;color:#17120a;
+  font-weight:900;padding:11px 17px
+}
+.hero {
+  max-width:1200px;margin:20px auto;padding:35px 25px;
+  border:1px solid #705515;border-radius:20px;
+  background:radial-gradient(ellipse at 80% 20%,#5b4217,transparent 45%),#111;
+  display:flex;align-items:center;justify-content:space-between;gap:20px
+}
+.hero h1 {font-size:clamp(45px,9vw,78px);color:var(--gold2);margin:5px 0}
+.hero p {font-size:18px}
+.hero .tag {color:var(--gold2)}
+.hero-art {font-size:75px}
+.section {max-width:1200px;margin:30px auto;padding:0 15px}
+h2 {color:var(--gold2)}
+.categories {display:flex;gap:8px;overflow:auto;padding-bottom:15px}
+.cat {
+  white-space:nowrap;background:#171717;color:white;
+  border:1px solid #72551a;border-radius:30px;padding:9px 15px
+}
+.cat.active {background:var(--gold);color:#111}
+.layout {display:grid;grid-template-columns:1fr 310px;gap:18px}
+.grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.product {
+  background:var(--panel);border:1px solid #59451b;
+  border-radius:15px;overflow:hidden;display:flex;flex-direction:column
+}
+.photo {
+  height:165px;background:#211b0d;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;border-bottom:1px solid #59451b
+}
+.photo img {width:100%;height:100%;object-fit:cover}
+.photo .placeholder {
+  color:#d9bc68;text-align:center;padding:15px;font-size:13px
+}
+.pbody {padding:12px;display:flex;flex-direction:column;flex:1;gap:8px}
+.pname {font-weight:bold;min-height:45px}
+.price {font-size:19px;color:var(--gold2);font-weight:bold}
+.order {
+  margin-top:auto;border:0;border-radius:9px;padding:10px;
+  background:linear-gradient(135deg,var(--gold2),#bd8612);
+  color:#17120a;font-weight:900
+}
+.cart {
+  position:sticky;top:85px;align-self:start;
+  background:#141414;border:1px solid #72551a;
+  border-radius:15px;padding:15px
+}
+.cart h3 {color:var(--gold2);margin-top:0}
+.cartline {
+  display:flex;justify-content:space-between;gap:8px;
+  padding:10px 0;border-bottom:1px solid #383022;font-size:13px
+}
+.qty {display:flex;align-items:center;gap:6px}
+.qty button {
+  background:#222;color:white;border:1px solid #72551a;
+  border-radius:6px;width:27px;height:27px
+}
+.total {
+  display:flex;justify-content:space-between;
+  color:var(--gold2);font-size:19px;font-weight:bold;padding:14px 0
+}
+.whatsapp {
+  width:100%;background:var(--green);color:white;
+  border:0;border-radius:10px;padding:13px;font-weight:bold
+}
+.empty {text-align:center;color:var(--muted);padding:15px}
+footer {
+  margin-top:35px;padding:25px 18px;
+  border-top:1px solid #72551a;background:#101010
+}
+.footerin {
+  max-width:1200px;margin:auto;display:flex;
+  justify-content:space-between;gap:20px;flex-wrap:wrap
+}
+footer strong {color:var(--gold2)}
+.float {
+  position:fixed;bottom:15px;left:15px;z-index:15;
+  background:var(--green);color:white;border:0;
+  border-radius:40px;padding:13px 18px;font-weight:bold
+}
+@media(max-width:850px) {
+  .links {display:none}
+  .layout {grid-template-columns:1fr}
+  .cart {position:static}
+  .grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero {margin:12px;padding:20px}
+  .hero-art {font-size:48px}
+}
+@media(max-width:390px) {
+  .grid {gap:8px}
+  .photo {height:120px}
+  .pbody {padding:9px}
+}
+</style>
+</head>
 <body>
-<header class="topbar"><nav class="nav"><a class="logo" href="#home">TOP 5<small>كافتيريا</small></a><div class="navlinks"><a href="#home">الرئيسية</a><a href="#menu">المنيو</a><a href="#contact">تواصل معنا</a></div><button class="cartbtn" onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">سلة الطلبات <span id="count">0</span></button></nav></header>
-<section class="hero" id="home"><div><span class="tag">نكهة تستحق التجربة</span><h1>TOP 5</h1><p>المأكولات الشعبية والسندوتشات والعصائر والخلطات</p><a class="goldbtn" href="#menu">تصفح المنيو</a></div><div class="hero-art" aria-hidden="true">🍹 🥪</div></section>
-<main class="section" id="menu"><h2>قائمة الأصناف</h2><div class="categories" id="categories"></div><div class="layout"><div class="grid" id="products"></div><aside class="cart" id="cart"><h3>🛒 سلة الطلبات</h3><div id="cartitems" class="empty">السلة فارغة حالياً</div><div class="total"><span>الإجمالي</span><span id="total">0 ريال</span></div><button class="whatsapp" onclick="sendOrder()">إرسال الطلب عبر واتساب</button><p class="notice">يرجى مراجعة الأصناف والكميات قبل إرسال الطلب.</p></aside></div></main>
-<footer class="info" id="contact"><div class="infoin"><div><strong>TOP 5</strong><br>كافتيريا</div><div>📍 <strong>العنوان</strong><br>شارع حمزة بجوار مركز درعه</div><div>🕒 <strong>ساعات العمل</strong><br>6 صباحاً – 11 ظهراً<br>3 عصراً – 12 ليلاً</div><div>☎ <strong>الطلبات والاستفسار</strong><br>0540965933</div></div></footer>
-<button class="floating" onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">🛒 السلة (<span id="floatcount">0</span>)</button>
+
+<header>
+  <nav class="nav">
+    <a class="logo" href="#home">TOP 5<small>كافتيريا</small></a>
+    <div class="links">
+      <a href="#home">الرئيسية</a>
+      <a href="#menu">المنيو</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <button class="gold" onclick="goCart()">السلة (<span id="count">0</span>)</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <span class="tag">نكهة تستحق التجربة</span>
+    <h1>TOP 5</h1>
+    <p>المأكولات الشعبية والسندوتشات والعصائر والخلطات</p>
+    <a class="gold" href="#menu">تصفح المنيو</a>
+  </div>
+  <div class="hero-art" aria-hidden="true">TOP 5</div>
+</section>
+
+<main class="section" id="menu">
+  <h2>قائمة الأصناف</h2>
+  <div class="categories" id="categories"></div>
+  <div class="layout">
+    <div class="grid" id="products"></div>
+    <aside class="cart" id="cart">
+      <h3>🛒 سلة الطلبات</h3>
+      <div id="cartitems" class="empty">السلة فارغة حالياً</div>
+      <div class="total"><span>الإجمالي</span><span id="total">0 ريال</span></div>
+      <button class="whatsapp" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>
+    </aside>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="footerin">
+    <div><strong>TOP 5</strong><br>كافتيريا</div>
+    <div>📍 <strong>العنوان</strong><br>شارع حمزة بجوار مركز درعه</div>
+    <div>🕒 <strong>ساعات العمل</strong><br>6 صباحاً – 11 ظهراً<br>3 عصراً – 12 ليلاً</div>
+    <div>☎ <strong>الطلبات</strong><br>0540965933</div>
+  </div>
+</footer>
+
+<button class="float" onclick="goCart()">🛒 السلة (<span id="floatcount">0</span>)</button>
+
 <script>
-const menu=[
-['المأكولات الشعبية', [['كبدة غنمي',17,'🍳'],['لحم',17,'🥘'],['دجاج',17,'🍗'],['فاصوليا مع البيض',10,'🍳'],['فول مع البيض',10,'🥣'],['شكشوكة عدني',10,'🍳'],['عقدة دجاج',15,'🍲'],['لحسة',12,'🥘'],['بيض مقلي',10,'🍳'],['مخبونة صغيرة',10,'🥘']]],
-['السندوتشات', [['سندوتش كبدة',5,'🥖'],['سندوتش بيض مقلي',3,'🥖'],['سندوتش بيض مسلوق',3,'🥖'],['سندوتش شكشوكة',3,'🥖'],['سندوتش جبن وحلاوة',3,'🥖']]],
-['المشروبات الساخنة', [['شاي سادة',null,'☕'],['شاي عدني',2,'☕'],['زنجبيل سادة',2,'🫖'],['زنجبيل بالحليب',3,'☕'],['نسكافيه',3,'☕']]],
-['الخلطات', [['عرايسي ملكي',13,'🥤'],['عرايسي عادي',7,'🥤'],['أصفهاني',7,'🥤'],['مانجو بلاس',7,'🥭'],['عوار قلب',7,'🥤'],['عسولة',7,'🍯'],['ليالي عدن',7,'🥤'],['فخفخينا',7,'🍹'],['طاقات',7,'🥤'],['أفوكادو',7,'🥑'],['أفوكادو ربع',5,'🥑'],['طوبي',7,'🥤'],['تانيه',7,'🥤'],['كوكتيل',7,'🍹']]],
-['العصائر الفريش', [['مانجو',7,'🥭'],['برتقال',7,'🍊'],['برتقال بالحليب',7,'🥛'],['رمان',7,'🍷'],['بطيخ',7,'🍉'],['شمام',7,'🍈'],['موز',7,'🍌'],['أناناس',7,'🍍'],['تفاح',7,'🍏'],['فراولة',7,'🍓'],['عنب',7,'🍇'],['مغربي',7,'🍹']]],
-['الموهيتو', [['موهيتو مكس',10,'🍹'],['موهيتو توت',10,'🫐'],['موهيتو فراولة',10,'🍓'],['موهيتو بلو',10,'🧊'],['موهيتو بطيخ',10,'🍉'],['موهيتو خلطة مزاج',10,'🍹']]],
-['الشمندر', [['شمندر بروتين',13,'🥤'],['شمندر سادة',7,'🧃'],['شمندر مكس',10,'🥤']]],
-['سلطة الفواكه', [['سلطة فواكه مكس',15,'🍓'],['سلطة فواكه زين',10,'🍍'],['سلطة فواكه سادة',10,'🍇']]],
-['الحلويات', [['بان كيك ملكي',12,'🥞'],['بان كيك سادة',10,'🥞'],['كريب سادة',10,'🍫'],['كريب فواكه',12,'🍓'],['كريب مكس',12,'🍫']]],
-['الميلك شيك', [['ميلك شيك كيت كات',7,'🥤'],['ميلك شيك سنكرز',7,'🥤'],['ميلك شيك أوريو',7,'🥤'],['ميلك شيك شوكولاتة',7,'🍫']]]
+const menu = [
+['المأكولات الشعبية',[
+['كبدة غنمي',17],['لحم',17],['دجاج',17],
+['فاصوليا مع البيض',10],['فول مع البيض',10],
+['شكشوكة عدني',10],['عقدة دجاج',15],
+['لحسة',12],['بيض مقلي',10],['مخبونة صغيرة',10]
+]],
+['السندوتشات',[
+['سندوتش كبدة',5],['سندوتش بيض مقلي',3],
+['سندوتش بيض مسلوق',3],['سندوتش شكشوكة',3],
+['سندوتش جبن وحلاوة',3]
+]],
+['المشروبات الساخنة',[
+['شاي سادة',null],['شاي عدني',2],
+['زنجبيل سادة',2],['زنجبيل بالحليب',3],['نسكافيه',3]
+]],
+['الخلطات',[
+['عرايسي ملكي',13],['عرايسي عادي',7],['أصفهاني',7],
+['مانجو بلاس',7],['عوار قلب',7],['عسولة',7],
+['ليالي عدن',7],['فخفخينا',7],['طاقات',7],
+['أفوكادو',7],['أفوكادو ربع',5],['طوبي',7],
+['تانيه',7],['كوكتيل',7]
+]],
+['العصائر الفريش',[
+['مانجو',7],['برتقال',7],['برتقال بالحليب',7],
+['رمان',7],['بطيخ',7],['شمام',7],['موز',7],
+['أناناس',7],['تفاح',7],['فراولة',7],['عنب',7],['مغربي',7]
+]],
+['الموهيتو',[
+['موهيتو مكس',10],['موهيتو توت',10],
+['موهيتو فراولة',10],['موهيتو بلو',10],
+['موهيتو بطيخ',10],['موهيتو خلطة مزاج',10]
+]],
+['الشمندر',[
+['شمندر بروتين',13],['شمندر سادة',7],['شمندر مكس',10]
+]],
+['سلطة الفواكه',[
+['سلطة فواكه مكس',15],['سلطة فواكه زين',10],
+['سلطة فواكه سادة',10]
+]],
+['الحلويات',[
+['بان كيك ملكي',12],['بان كيك سادة',10],
+['كريب سادة',10],['كريب فواكه',12],['كريب مكس',12]
+]],
+['الميلك شيك',[
+['ميلك شيك كيت كات',7],['ميلك شيك سنكرز',7],
+['ميلك شيك أوريو',7],['ميلك شيك شوكولاتة',7]
+]]
 ];
-let active=menu[0][0],cart={};const cats=document.getElementById('categories'),products=document.getElementById('products');
-function renderCats(){cats.innerHTML=menu.map(([c])=>`<button class="cat ${c===active?'active':''}" onclick="selectCat('${c}')">${c}</button>`).join('')}
-function selectCat(c){active=c;renderCats();renderProducts()}
-function renderProducts(){const items=menu.find(x=>x[0]===active)[1];products.innerHTML=items.map(([name,price,icon])=>`<article class="product"><div class="photo"><span class="symbol">${icon}</span></div><div class="pbody"><div class="pname">${name}</div><div class="price">${price===null?'السعر غير محدد':price+' ريال'}</div><button class="add" ${price===null?'disabled':''} onclick="addItem('${name}',${price})">＋ أضف إلى السلة</button></div></article>`).join('')}
-function addItem(n,p){cart[n]=(cart[n]||0)+1;renderCart()}
-function change(n,d){cart[n]+=d;if(cart[n]<=0)delete cart[n];renderCart()}
-function renderCart(){let entries=Object.entries(cart);document.getElementById('count').textContent=entries.reduce((s,x)=>s+x[1],0);document.getElementById('floatcount').textContent=document.getElementById('count').textContent;document.getElementById('cartitems').className=entries.length?'':'empty';document.getElementById('cartitems').innerHTML=entries.length?entries.map(([n,q])=>{let p=menu.flatMap(x=>x[1]).find(x=>x[0]===n)[1];return `<div class="cartline"><span>${n}<br><b>${p*q} ريال</b></span><span class="qty"><button onclick="change('${n}',-1)">−</button>${q}<button onclick="change('${n}',1)">＋</button></span></div>`}).join(''):'السلة فارغة حالياً';let total=entries.reduce((s,[n,q])=>s+menu.flatMap(x=>x[1]).find(x=>x[0]===n)[1]*q,0);document.getElementById('total').textContent=total+' ريال'}
-function sendOrder(){let entries=Object.entries(cart);if(!entries.length){alert('أضف صنفاً واحداً على الأقل إلى السلة.');return}let total=entries.reduce((s,[n,q])=>s+menu.flatMap(x=>x[1]).find(x=>x[0]===n)[1]*q,0);let lines=entries.map(([n,q])=>{let p=menu.flatMap(x=>x[1]).find(x=>x[0]===n)[1];return `• ${n} × ${q} = ${p*q} ريال`}).join('\n');let msg=`السلام عليكم، أرغب بطلب من TOP 5:\n${lines}\n\nالإجمالي: ${total} ريال`;window.open('https://wa.me/966540965933?text='+encodeURIComponent(msg),'_blank')}
-renderCats();renderProducts();renderCart();
-</script></body></html>
+
+let active=menu[0][0];
+let cart={};
+
+const categories=document.getElementById('categories');
+const products=document.getElementById('products');
+
+function renderCats(){
+  categories.innerHTML=menu.map(([c])=>
+    `<button class="cat ${c===active?'active':''}" onclick="selectCat(${JSON.stringify(c)})">${c}</button>`
+  ).join('');
+}
+
+function selectCat(c){
+  active=c;
+  renderCats();
+  renderProducts();
+}
+
+function renderProducts(){
+  const items=menu.find(x=>x[0]===active)[1];
+  products.innerHTML=items.map(([name,price])=>{
+    const safe=JSON.stringify(name);
+    return `
+    <article class="product">
+      <div class="photo">
+        <div class="placeholder">صورة المنتج<br>${name}</div>
+      </div>
+      <div class="pbody">
+        <div class="pname">${name}</div>
+        <div class="price">${price===null?'السعر غير محدد':price+' ريال'}</div>
+        <button class="order" ${price===null?'disabled':''}
+          onclick="addItem(${safe})">اطلب الآن</button>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function addItem(name){
+  const item=menu.flatMap(x=>x[1]).find(x=>x[0]===name);
+  if(!item || item[1]===null)return;
+  cart[name]=(cart[name]||0)+1;
+  renderCart();
+}
+
+function change(name,delta){
+  cart[name]+=delta;
+  if(cart[name]<=0)delete cart[name];
+  renderCart();
+}
+
+function getPrice(name){
+  return menu.flatMap(x=>x[1]).find(x=>x[0]===name)[1];
+}
+
+function renderCart(){
+  const entries=Object.entries(cart);
+  const count=entries.reduce((s,x)=>s+x[1],0);
+  document.getElementById('count').textContent=count;
+  document.getElementById('floatcount').textContent=count;
+
+  document.getElementById('cartitems').className=
+    entries.length?'':'empty';
+
+  document.getElementById('cartitems').innerHTML=
+    entries.length?entries.map(([name,q])=>`
+      <div class="cartline">
+        <span>${name}<br><b>${getPrice(name)*q} ريال</b></span>
+        <span class="qty">
+          <button onclick="change(${JSON.stringify(name)},-1)">−</button>
+          ${q}
+          <button onclick="change(${JSON.stringify(name)},1)">＋</button>
+        </span>
+      </div>
+    `).join(''):'السلة فارغة حالياً';
+
+  const total=entries.reduce((s,[name,q])=>s+getPrice(name)*q,0);
+  document.getElementById('total').textContent=total+' ريال';
+}
+
+function goCart(){
+  document.getElementById('cart').scrollIntoView({behavior:'smooth'});
+}
+
+function sendOrder(){
+  const entries=Object.entries(cart);
+  if(!entries.length){
+    alert('أضف صنفاً واحداً على الأقل إلى السلة.');
+    return;
+  }
+
+  const total=entries.reduce((s,[name,q])=>s+getPrice(name)*q,0);
+  const lines=entries.map(([name,q])=>
+    `• ${name} × ${q} = ${getPrice(name)*q} ريال`
+  ).join('\n');
+
+  const message=
+    `السلام عليكم، أرغب بطلب من TOP 5:\n${lines}\n\nالإجمالي: ${total} ريال`;
+
+  window.open(
+    'https://wa.me/966540965933?text='+encodeURIComponent(message),
+    '_blank'
+  );
+}
+
+renderCats();
+renderProducts();
+renderCart();
+</script>
+</body>
+</html>
